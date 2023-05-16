@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root, #home {
+    @apply min-h-screen;
+  }
+
+  body {
+    @apply bg-body text-text;
+  }
+
+  nav > ul  li {
+    @apply my-4 text-xl;
+  }
+
+  nav > ul  li  a {
+    @apply flex items-center gap-2 w-full;
+  }
+
+  img {
+    @apply w-10 h-10 rounded-full;
+  }
+}
+
+@layer components {
+
+  .post-link {
+    @apply flex items-center gap-2 p-2 rounded-md hover:bg-gray-200;
+  }
+
+  .post-link.selected {
+    @apply bg-primary text-white hover:bg-primaryhover;
+  }
+}
